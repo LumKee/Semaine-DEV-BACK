@@ -1,3 +1,0 @@
-# Organisateur de soirée 
-
-## Features
