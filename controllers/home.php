@@ -1,5 +1,5 @@
 <?php
 
-$title = 'Home^page';
+$title = 'Home page';
 
 include '../views/pages/home.php';

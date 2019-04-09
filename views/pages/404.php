@@ -1,5 +1,5 @@
-<?php include '../partials/header.php'; ?>
+<?php include '../views/partials/head.php'; ?>
 
 <h2>404</h2>
 
-<?php include '../partials/footer.php';
+<?php include '../views/partials/footer.php';
