@@ -19,8 +19,8 @@ if($q =='home')
 {
     $controller = 'home';
 }
-else if ($q == 'food') {
-    $controller = 'food';
+else if ($q == 'dashboard') {
+    $controller = 'dashboard';
 }
 // elseif (preg_match('/^page\/[1-9][0-9]*$/', $q))
 // {
