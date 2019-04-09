@@ -1,7 +1,7 @@
 <ul>
-    <li><a href="<?= URL ?>dashboard?categorie=Nourriture">Nourriture</a></li>
-    <li><a href="<?= URL ?>dashboard?categorie=Boissons">Boissons</a></li>
-    <li><a href="<?= URL ?>dashboard?categorie=Musiques">Musiques</a></li>
-    <li><a href="<?= URL ?>dashboard?categorie=Materiels">Matériels</a></li>
-    <li><a href="<?= URL ?>dashboard?categorie=Depenses">Dépenses</a></li>
+    <li onclick="location.href='<?= URL ?>dashboard?categorie=Nourriture'">Nourriture</li>
+    <li onclick="location.href='<?= URL ?>dashboard?categorie=Boissons'">Boissons</li>
+    <li onclick="location.href='<?= URL ?>dashboard?categorie=Musiques'">Musiques</li>
+    <li onclick="location.href='<?= URL ?>dashboard?categorie=Materiels'">Matériels</li>
+    <li onclick="location.href='<?= URL ?>dashboard?categorie=Depenses'">Dépenses</li>
 </ul>

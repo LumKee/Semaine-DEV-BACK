@@ -44,11 +44,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.navMenu ul li a {
     color: rgba(51, 51, 51, 0.5);
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .navMenu ul li:hover,
