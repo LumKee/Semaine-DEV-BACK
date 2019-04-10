@@ -103,13 +103,58 @@ body {
     left: 7.5px;
 }
 
+.layers>div .container .move_1 {
+    background-color: #9B9B9B;
+    position: relative;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 200px;
+}
+
+.layers>div .container .move_1::before {
+    content: "";
+    position: absolute;
+    background-color: #9B9B9B;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    right: 7.5px;
+}
+
+.layers>div .container .move_1::after {
+    content: "";
+    position: absolute;
+    background-color: #9B9B9B;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    left: 7.5px;
+}
+
 .layers>div .itemList {
     margin: 14px 20px 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-height: 280px;
-    overflow-y: scroll
+    overflow-y: scroll;
+}
+
+.layers>div .itemList .container {
+border: 1px solid #EFEFEF;
+border-radius: 3px;
+padding: 7px 7px 7px 14px;
+font-size: 18px;
+color:#52ABFD;
+margin: 0 0 16px 0;
+}
+
+.layers>div .itemList .container p {
+    font-size: 14px;
+	color:#9B9B9B;
+    margin: 0px;
 }
 
 /* Nourriture/Boisson End */
