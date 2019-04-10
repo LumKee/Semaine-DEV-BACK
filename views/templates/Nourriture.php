@@ -44,12 +44,38 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <?php foreach($myVar as $pseudoVar): ?>
-            <label class="container"><?= $pseudoVar->columnName; ?>
-                <input type="checkbox" name="purchase">
-                <span class="checkmark"></span>
-            </label>
-        <?php endforeach; ?>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
     </div>
 </div>
 <div class="acquis">
@@ -58,13 +84,38 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <?php foreach($myVar as $pseudoVar): ?>
-            <label class="container">Produit
-                <input type="checkbox" name="own">
-                <span class="checkmark"></span>
-            </label>
-            <a href="delete.php">delete image</a>
-        <?php endforeach; ?>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
     </div>
 </div>
 <div class="besoin">
