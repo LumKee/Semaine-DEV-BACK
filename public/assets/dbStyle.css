@@ -103,7 +103,7 @@ body {
     left: 7.5px;
 }
 
-.layers>div .container .move_1 {
+.layers>div div.container .move_1 {
     background-color: #9B9B9B;
     position: relative;
     width: 4px;
@@ -113,7 +113,7 @@ body {
     left: 200px;
 }
 
-.layers>div .container .move_1::before {
+.layers>div div.container .move_1::before {
     content: "";
     position: absolute;
     background-color: #9B9B9B;
@@ -123,7 +123,7 @@ body {
     right: 7.5px;
 }
 
-.layers>div .container .move_1::after {
+.layers>div div.container .move_1::after {
     content: "";
     position: absolute;
     background-color: #9B9B9B;
@@ -142,7 +142,7 @@ body {
     overflow-y: scroll;
 }
 
-.layers>div .itemList .container {
+.layers>div .itemList div.container {
 border: 1px solid #EFEFEF;
 border-radius: 3px;
 padding: 7px 7px 7px 14px;
@@ -151,7 +151,7 @@ color:#52ABFD;
 margin: 0 0 16px 0;
 }
 
-.layers>div .itemList .container p {
+.layers>div .itemList div.container p {
     font-size: 14px;
 	color:#9B9B9B;
     margin: 0px;
