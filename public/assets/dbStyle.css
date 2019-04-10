@@ -112,57 +112,6 @@ body {
     overflow-y: scroll
 }
 
-/* The container */
-.layers>div .itemList label.container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    position: relative;
-    padding-left: 24px;
-    margin: 7.5px 0;
-    cursor: pointer;
-    font-size: 16px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.layers>div .itemList label.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-/* Create a custom checkbox */
-.layers>div .itemList label.container .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 12px;
-    width: 12px;
-    margin-top: 4px;
-    border-radius: 50%;
-    border: 1px solid #979797;
-    background-color: white;
-}
-
-/* On mouse-over */
-.layers>div .itemList label.container:hover input~.checkmark {
-    background-color: #EBEFF3;
-}
-
-/* When the checkbox is checked */
-.layers>div .itemList label.container input:checked~.checkmark {
-    background-color: #56ADFD;
-    height: 12px;
-    width: 12px;
-    border: 1px solid #56ADFD;
-}
-
 /* Nourriture/Boisson End */
 
 /* Dépense Personna Start */
