@@ -4,38 +4,30 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-            <label class="container">Produit
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Prod
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Produit
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Prod
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Produit
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Prod
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Produit
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Prod
-                <input type="checkbox" name="need">
-                <span class="checkmark"></span>
-            </label>
+            <div class="container">Produit
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Produit
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
+            <div class="container">Prod
+                <p>In order to discuss the general funct of the logo. </p>
+            </div>
     </div>
 </div>
 <div class="achat">
