@@ -47,34 +47,50 @@
             <div class="container">Produit
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
             <div class="container">Prod
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
             <div class="container">Produit
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
             <div class="container">Prod
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
             <div class="container">Produit
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
             <div class="container">Prod
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
             <div class="container">Produit
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
             <div class="container">Prod
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
+                <div class="user_btn"></div>
+                <div class="user_btn_2"></div>
             </div>
     </div>
 </div>
@@ -84,38 +100,30 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-            <div class="container">Produit
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
-            <div class="container">Prod
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
-            <div class="container">Produit
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
-            <div class="container">Prod
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
-            <div class="container">Produit
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
-            <div class="container">Prod
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
-            <div class="container">Produit
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
-            <div class="container">Prod
-                <div class="move_1"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-            </div>
+        <div class="container">Produit
+            <div class="move_1"></div>
+        </div>
+        <div class="container">Prod
+            <div class="move_1"></div>
+        </div>
+        <div class="container">Produit
+            <div class="move_1"></div>
+        </div>
+        <div class="container">Prod
+            <div class="move_1"></div>
+        </div>
+        <div class="container">Produit
+        <div class="move_1"></div>
+        </div>
+        <div class="container">Prod
+            <div class="move_1"></div>
+        </div>
+        <div class="container">Produit
+            <div class="move_1"></div>
+        </div>
+        <div class="container">Prod
+            <div class="move_1"></div>
+        </div>
     </div>
 </div>
 <div class="besoin">

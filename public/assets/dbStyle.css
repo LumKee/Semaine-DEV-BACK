@@ -143,6 +143,7 @@ body {
 }
 
 .layers>div .itemList div.container {
+position: relative;
 border: 1px solid #EFEFEF;
 border-radius: 3px;
 padding: 7px 7px 7px 14px;
@@ -155,6 +156,48 @@ margin: 0 0 16px 0;
     font-size: 14px;
 	color:#9B9B9B;
     margin: 0px;
+}
+
+.layers>div .itemList div.container .user_btn {
+    width: 20px;
+    height: 20px;
+    background-color: #56ADFD;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: calc(100% - 20px);
+
+}
+
+.layers>div .itemList div.container .user_btn::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 10px;
+    height: 2px;
+    border-radius: 50px;
+}
+
+.layers>div .itemList div.container .user_btn::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.layers>div .itemList div.container .user_btn_2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://scontent-cdt1-1.xx.fbcdn.net/v/t31.0-1/c0.0.1439.1439a/21415020_1538803939499495_1965272431162494151_o.jpg?_nc_cat=100&_nc_ht=scontent-cdt1-1.xx&oh=eb473fb13b9ebbb0d97e0b2484ee937b&oe=5D42FC19');
+    background-size: contain;
+    border-radius: 50%;
+    bottom: 20px;
+    margin-left: calc(100% - 42px);
 }
 
 /* Nourriture/Boisson End */
