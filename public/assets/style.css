@@ -12,6 +12,7 @@ header {
     min-width: 1040px;
     height: 80px;
     background-color: white;
+    font-weight: 300;
 }
 
 h2 {
@@ -58,18 +59,6 @@ h2 {
     border: 1px solid #56ADFD;
     border-radius: 3px;
 }
-
-/*
-* header
-*/
-
-@font-face
-{
-    font-family: "SourceSansPro";
-    src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
-    font-family: "SourceSansPro_Light";
-    src: url("fonts/SourceSansPro-Light.ttf") format("truetype")
-  }
 
 
 /*
@@ -118,7 +107,6 @@ body
     top: -0.0625rem;
     left: 1.5625rem;
     font-size: 1.125rem;
-    font-family: "SourceSansPro_Light";
     color: #333333;
 }
 
@@ -146,7 +134,6 @@ body
     top: 0.9375rem;
     left: 3.875rem;
     font-size: 1.125rem;
-    font-family: "SourceSansPro_Light";
     color: #333333;
 }
 
