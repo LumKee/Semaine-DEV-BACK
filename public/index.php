@@ -22,10 +22,18 @@ if($q =='home')
 else if ($q == 'dashboard') {
     $controller = 'dashboard';
 }
-// elseif (preg_match('/^page\/[1-9][0-9]*$/', $q))
-// {
-//     $controller = 'page';
-// }
+else if ($q == 'confirmation') {
+    $controller = 'confirmation';
+}
+else if ($q == 'create') {
+    $controller = 'create';
+}
+else if ($q == 'join') {
+    $controller = 'join';
+}
+else if ($q == 'link') {
+    $controller = 'link';
+}
 
 //include controller
 
