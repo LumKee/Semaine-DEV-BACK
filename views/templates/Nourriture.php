@@ -187,9 +187,12 @@
 </div>
 <div class="background">
     <div class="popup">
-        <h2>Nourriture
-            <span class="close">&times;</span>
-        </h2>
+        <div class="present">
+            <h2>Nourriture
+                <span class="close">&times;</span>
+            </h2>
+            <input type="search" name="search" placeholder="Search">
+        </div>
         <div class="itemList">
             <div class="container">
                 <div class="img_food"></div>Produit
@@ -198,6 +201,35 @@
                     <div class="user_btn"></div>
                 </div>
             </div>
+
+            <div class="container">Prod<div class="img_food"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+                <div class="users">
+                    <div class="user_btn"></div>
+                </div>
+            </div>
+
+            <div class="container">Produit<div class="img_food"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+                <div class="users">
+                    <div class="user_btn"></div>
+                </div>
+            </div>
+
+            <div class="container">Prod<div class="img_food"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+                <div class="users">
+                    <div class="user_btn"></div>
+                </div>
+            </div>
+
+            <div class="container">Produit<div class="img_food"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+                <div class="users">
+                    <div class="user_btn"></div>
+                </div>
+            </div>
+
             <div class="container">Prod<div class="img_food"></div>
                 <p>In order to discuss the general funct of the logo. </p>
 
@@ -205,46 +237,15 @@
                     <div class="user_btn"></div>
                 </div>
             </div>
+
             <div class="container">Produit<div class="img_food"></div>
-
-
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-            <div class="container">Prod<div class="img_food"></div>
-
-
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-            <div class="container">Produit<div class="img_food"></div>
-
-
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-            <div class="container">Prod<div class="img_food"></div>
-
                 <p>In order to discuss the general funct of the logo. </p>
 
                 <div class="users">
                     <div class="user_btn"></div>
                 </div>
             </div>
-            <div class="container">Produit<div class="img_food"></div>
 
-                <p>In order to discuss the general funct of the logo. </p>
-
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
             <div class="container">Prod<div class="img_food"></div>
                 <p>In order to discuss the general funct of the logo. </p>
 
