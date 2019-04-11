@@ -143,7 +143,7 @@ body {
     padding-right: 15px;
 }
 
-.layers>div .itemList div.container {
+.layers>div .itemList .container {
     position: relative;
     border: 1px solid #EFEFEF;
     border-radius: 3px;
@@ -402,29 +402,66 @@ body {
     width: 19rem;
 }
 
-.layers>div .itemList div.container .img_food {
+.layers>div .itemList label.container {
+    display: block;
     position: relative;
-    width: 60px;
-    height: 60px;
-    float:left;
-    margin-right:10px; 
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.layers>div .itemList label.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.layers>div .itemList label.container .checkmark {
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid #56ADFD;
+    border-radius: 50%;
+}
+
+/* When the checkbox is checked, add a blue background */
+.layers>div .itemList label.container input:checked~.checkmark {
+    background-color: #56ADFD;
+}
+
+.layers>div .itemList label.container .img_food {
+    position: relative;
+    width: 100px;
+    height: 105px;
+    float: left;
+    margin-right: 10px;
     background-image: url('https://www.monoprix.fr/assets/images/grocery/2712160/580x580.jpg?impolicy=High_Grocery');
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .layers>div.background div.popup .present {
-   padding-left: 20px;
-   transform: translateY(-1.25rem);
+    padding-left: 20px;
+    transform: translateY(-1.25rem);
 }
 
-.layers>div.background div.popup .present img{
+.layers>div.background div.popup .present img {
     width: 6%;
     transform: translateY(2.8125rem);
 }
 
 .layers>div.background div.popup .present h2 {
-   padding-left: 40px;
-   color: #333333;
+    padding-left: 40px;
+    color: #333333;
 }
 
 .layers>div.background div.popup input {
@@ -437,7 +474,7 @@ body {
     height: 95%;
     color: #9B9B9B;
     background-image: url('images/search.svg');
-    background-position: 5%, 45%; 
+    background-position: 5%, 45%;
     background-repeat: no-repeat;
     background-size: 4%;
 }
