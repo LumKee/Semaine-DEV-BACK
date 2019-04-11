@@ -415,3 +415,17 @@ body {
     background-image: url('https://www.monoprix.fr/assets/images/grocery/2712160/580x580.jpg?impolicy=High_Grocery');
     background-size: contain;
 }
+
+.layers>div.background div.popup .present {
+   padding-left: 20px;
+}
+
+.layers>div.background div.popup input {
+    position: relative;
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 95%;
+    height: 95%;
+    color: #9B9B9B;
+}
