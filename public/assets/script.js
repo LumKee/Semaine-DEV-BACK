@@ -20,7 +20,6 @@ console.log(popup)
 
 function openPopup() {
     background.style.display = 'flex'
-    console.log('ok')
 }
 
 function closePopup() {

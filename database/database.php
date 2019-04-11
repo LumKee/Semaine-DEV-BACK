@@ -1,10 +1,10 @@
 <?php
 
 define('DB_HOST', 'localhost');
-define('DB_PORT', '');
+define('DB_PORT', '8889');
 define('DB_NAME', 'test');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'root');
 
 try {
     $bdd = new PDO('mysql:dbname='.DB_NAME.';host='.DB_HOST.';port='.DB_PORT, DB_USER, DB_PASS);

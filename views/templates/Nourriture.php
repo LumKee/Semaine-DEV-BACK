@@ -7,7 +7,7 @@
         $search = '';
     }
     $resultTab[] = 0;
-    
+    $visib = "style='display: none'";
     if ($productName !== null) {
       $curl = curl_init();
       curl_setopt_array($curl, array(
@@ -54,6 +54,7 @@
             $image = $responseOpen->product->image_front_url;
             $resultTab[$key] = [$name, $image = $responseOpen->product->image_front_url];
             $key = $key + 1;
+            $visib = "style='display: block'";
           }
         }
       }
@@ -247,17 +248,17 @@
         <?php endforeach; ?>
     </div>
 </div>
-<div class="background" <?php echo $search ?>>
+<div class="background" <?php echo $search; ?>>
     <div class="popup">
-        <form action="#&?categorie=Nourriture" method="get" class="present">
+        <form action="<?= URL ?>dashboard?categorie=Nourriture" method="get" class="present">
             <img src= '../public/assets/images/burger.svg' alt="burger"/>
             <h2>Nourriture
             <span class="close">&times;</span>
             </h2>
             <input type="search" name="product" placeholder="Search">
-            <input type="submit">
+            <input class='sub' type="submit">
         </form>
-        <div class="itemList">
+        <div class="itemList" <?php echo $visib; ?>>
             <?php for ($i=0; $i < count($resultTab); $i++):?>
             <label class="container">
                 <img class="img_food" src="<?php echo $resultTab[$i][1]; ?>">
