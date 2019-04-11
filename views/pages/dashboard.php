@@ -10,7 +10,7 @@
 <header>
     <?php include '../views/partials/head.php'; ?>
 </header>
-<div class="navMenu" data-state="<?= $categorie ?>">
+<div class="navMenu" data-state="<?php echo $categorie; ?>">
     <?php include '../views/partials/nav.php'; ?>
 </div>
 <div class="layers">
