@@ -1,3 +1,6 @@
+<?php
+    $_SESSION['position'] = 'Materiels';
+?>
 <div class="besoin">
     <div class="title">
         <h2>Besoin</h2>

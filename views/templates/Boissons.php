@@ -1,4 +1,5 @@
 <?php
+    $_SESSION['position'] = 'Boissons';
     $productName = !empty($_GET['product']) ? $_GET['product'] : null;
     if ($productName !== null) {
         $search = "style='display: flex;'";
@@ -59,6 +60,26 @@
         }
       }
     }
+    if(isset($_POST['selection'])) {
+        if(isset($_POST['productName'])) {
+            $prod = $_POST['productName'];
+            $pddprod = '';
+            for ($i=0; $i<count($prod); $i++) {
+                $data = [
+                    'id_Party' => (int)($_SESSION['party_id']),
+                    'productName' => $prod[$i]
+                ];
+                $preparedrink = $bdd->prepare('INSERT INTO boisson (id_Party, drinkName) VALUES (:id_Party, :productName)');
+                $preparedrink->execute($data);
+            }
+        }
+    }
+    $data = [
+        'id_Party' => (int)($_SESSION['party_id']),
+    ];
+    $prepare = $bdd->prepare('SELECT id, drinkName FROM boisson WHERE id_Party = :id_Party ORDER BY id DESC');
+    $prepare->execute($data);
+    $drinks = $prepare->fetchAll();
 ?>
 <div class="besoin">
     <div class="title">
@@ -66,38 +87,12 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <div class="container">Produit
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
-        <div class="container">Prod
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
-        <div class="container">Produit
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
-        <div class="container">Prod
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
-        <div class="container">Produit
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
-        <div class="container">Prod
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
-        <div class="container">Produit
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
-        <div class="container">Prod
-            <div class="point"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-        </div>
+        <?php foreach($drinks as $_food): ?>
+            <div class="container"><?= $_food->drinkName ?>
+                <div class="point" onclick="location.href='<?= URL ?>delete?idprod=<?php echo $_food->id; ?>'" ></div>
+                <p>Something about me and my composition. </p>
+            </div>
+        <?php endforeach; ?>
     </div>
 </div>
 <div class="achat">
@@ -106,70 +101,16 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <div class="container">Produit
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
+        <?php foreach($drinks as $_food): ?>
+            <div class="container"><?= $_food->drinkName ?>
+                <div class="move_1"></div>
+                <p>In order to discuss the general funct of the logo. </p>
+                <div class="users">
+                    <div class="user_btn"></div>
+                    <div class="user_perso"></div>
+                </div>
             </div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
-            </div>
-        </div>
-        <div class="container">Produit
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
-            </div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
-            </div>
-        </div>
-        <div class="container">Produit
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
-            </div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
-            </div>
-        </div>
-        <div class="container">Produit
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
-            </div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-            <p>In order to discuss the general funct of the logo. </p>
-            <div class="users">
-                <div class="user_btn"></div>
-                <div class="user_perso"></div>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </div>
 <div class="acquis">
@@ -178,55 +119,33 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <div class="container">Produit
-            <div class="move_1"></div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-        </div>
-        <div class="container">Produit
-            <div class="move_1"></div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-        </div>
-        <div class="container">Produit
-            <div class="move_1"></div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-        </div>
-        <div class="container">Produit
-            <div class="move_1"></div>
-        </div>
-        <div class="container">Prod
-            <div class="move_1"></div>
-        </div>
+        <?php foreach($drinks as $_food): ?>
+            <div class="container"><?= $_food->drinkName ?>
+                <div class="move_1"></div>
+            </div>
+        <?php endforeach; ?>
     </div>
 </div>
 <div class="background" <?php echo $search; ?>>
     <div class="popup">
-        <form action="<?= URL ?>dashboard?categorie=Nourriture" method="get" class="present">
+        <form action="" method="post" class="present">
             <img src= '../public/assets/images/beer.svg' alt="beer"/>
             <h2><?php echo $categorie; ?>
             <span class="close">&times;</span>
             </h2>
             <input type="search" name="product" placeholder="Search">
-            <input class='sub' type="submit">
+            <input class='sub' type="submit" name="find">
         </form>
-        <div class="itemList" <?php echo $visib; ?>>
+        <form class="itemList" <?php echo $visib; ?> method="post">
             <?php for ($i=0; $i < count($resultTab); $i++):?>
-            <label class="container">
-                <img class="img_food" src="<?php echo $resultTab[$i][1]; ?>">
-                <?php echo $resultTab[$i][0]; ?>
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
+                <label class="container">
+                    <img class="img_food" src="<?php echo $resultTab[$i][1]; ?>">
+                    <?php echo $resultTab[$i][0]; ?>
+                    <input class="checkbox" name="productName[]" type="checkbox" value="<?php echo $resultTab[$i][0]; ?>">
+                    <span class="checkmark"></span>
+                </label>
             <?php endfor ?>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-        </div>
+            <input type="submit" name="selection">
+        </form>
     </div>
 </div>

@@ -485,4 +485,6 @@ body {
     float: right;
     background-image: url('./images/more.svg');
     background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 99;
 }

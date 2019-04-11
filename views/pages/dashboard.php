@@ -5,7 +5,8 @@
         $categorie = (htmlspecialchars($_GET['categorie']));
     } 
     else {
-        $categorie = "Nourriture";
+        $_SESSION['position'] = "Nourriture";
+        $categorie = $_SESSION['position'];
     }
     if (is_null($_SESSION['party'])) {
         // On teste pour voir si nos variables ont bien été enregistrées

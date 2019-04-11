@@ -5,7 +5,7 @@
 /**
  * Configuration
  */
-define ('URL', 'http://albandelachaume.fr/');
+define ('URL', 'http://localhost:8888/Semaine-DEV-BACK/public/');
 
 /**
  * Routing
@@ -36,6 +36,9 @@ else if ($q == 'link') {
 }
 else if ($q == 'logout') {
     $controller = 'logout';
+}
+else if ($q == 'delete') {
+    $controller = 'delete';
 }
 
 //include controller
