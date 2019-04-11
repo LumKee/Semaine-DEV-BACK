@@ -34,6 +34,9 @@ else if ($q == 'join') {
 else if ($q == 'link') {
     $controller = 'link';
 }
+else if ($q == 'logout') {
+    $controller = 'logout';
+}
 
 //include controller
 

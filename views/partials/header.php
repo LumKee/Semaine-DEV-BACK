@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 require '../database/database.php';
 
 if (isset($_SESSION['user_id'])) {
@@ -36,5 +34,5 @@ if (isset($_SESSION)) {
             <img src="../public/assets/images/Alban.png" alt="profil">
             <span>Hello, <?= $user['login']; ?> !</span>
         </div>
-        <img class="log" src="../public/assets/images/log_out.svg" alt="log_out" onclick="location.href='<?= URL ?>'">
+        <img class="log" src="../public/assets/images/log_out.svg" alt="log_out" onclick="location.href='<?= URL ?>logout'">
 </nav>
