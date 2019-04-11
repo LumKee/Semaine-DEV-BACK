@@ -8,7 +8,7 @@
 ?>
 <?php include '../views/partials/head.php'; ?>
 <header>
-    <?php include '../views/partials/head.php'; ?>
+    <?php include '../views/partials/header.php'; ?>
 </header>
 <div class="navMenu" data-state="<?php echo $categorie; ?>">
     <?php include '../views/partials/nav.php'; ?>
