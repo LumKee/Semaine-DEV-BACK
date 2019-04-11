@@ -5,7 +5,7 @@
 /**
  * Configuration
  */
-define ('URL', 'http://localhost:8888/Semaine-DEV-BACK/public/');
+define ('URL', 'http://albandelachaume.fr/');
 
 /**
  * Routing
