@@ -4,7 +4,7 @@
     <img class="illustration" src="../public/assets/images/illustration.svg" alt="illustration" />
     <h2>Bravo ta soirée vient d’être créée !</h2>
     <div class="btnwrap">
-        <div class="btn1"><a href="<?= URL ?>party">Poursuivre</a></div>
+        <div class="btn1"><a href="<?= URL ?>dashboard">Poursuivre</a></div>
         <div class="btn2"><a href="#">Invite tes amis</a></div>
     </div>
 </div>

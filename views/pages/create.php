@@ -37,8 +37,9 @@ if (!empty($_POST)) {
             $statement->execute();
             
             $_SESSION['user_id'] = $bdd->lastInsertId();
+            $_SESSION['party'] = $_POST['name'];
 
-            header('Location: ./../Confirmation/confirmation.php');
+            header('Location:'.URL.'confirmation');
         }
     }
 }

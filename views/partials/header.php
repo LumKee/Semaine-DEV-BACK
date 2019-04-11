@@ -30,11 +30,11 @@ if (isset($_SESSION)) {
         <img class="logo" src="../public/assets/images/logo.svg" alt="logo">
         <div class="session">
             <img class="session_img" src="../public/assets/images/session.svg" alt="session">
-            <span class="session_text" >Soirée So'Hetic</span>
+            <span class="session_text" ><?php echo $_SESSION['party'] ?></span>
         </div>
         <div class="profil">
             <img src="../public/assets/images/Alban.png" alt="profil">
             <span>Hello, <?= $user['login']; ?> !</span>
         </div>
-        <img class="log" src="../public/assets/images/log_out.svg" alt="log_out">
+        <img class="log" src="../public/assets/images/log_out.svg" alt="log_out" onclick="location.href='<?= URL ?>'">
 </nav>
