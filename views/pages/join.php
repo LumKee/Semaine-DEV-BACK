@@ -57,7 +57,7 @@ if (!empty($_POST)) {
 
 <?php include '../views/partials/head.php'; ?>
 
-    <a href="./../index.php"><img class="logo" src="./Assets/images/logo.svg" alt="logo"></a>
+    <a href="./../index.php"><img class="logo" src="../public/assets/images/logo.svg" alt="logo"></a>
 
     <img class="illustration" src="./Assets/images/illustration.svg" alt="illustrations">
 
