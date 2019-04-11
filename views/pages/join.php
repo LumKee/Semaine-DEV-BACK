@@ -2,8 +2,8 @@
 
 session_start();
 
-require './../config/database.php';
-include 'form-handler.php';
+require '../database/database.php';
+include '../form/form-handlerJoin.php';
 
 if (!empty($_POST)) {
 
@@ -47,7 +47,7 @@ if (!empty($_POST)) {
 
         }
         
-        header('Location: ./../Link/link.php');
+        header('Location:'.URL.'link');
         exit;
     }
 
@@ -57,9 +57,9 @@ if (!empty($_POST)) {
 
 <?php include '../views/partials/head.php'; ?>
 
-    <a href="./../index.php"><img class="logo" src="../public/assets/images/logo.svg" alt="logo"></a>
+    <a href="<?= URL ?>"><img class="logo" src="../public/assets/images/logo.svg" alt="logo"></a>
 
-    <img class="illustration" src="./Assets/images/illustration.svg" alt="illustrations">
+    <img class="illustration" src="../public/assets/images/illustration.svg" alt="illustrations">
 
     <form action="#" method="post">
 

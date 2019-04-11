@@ -9,8 +9,8 @@
         The poster must
     </p>
     <div class="btnwrap">
-        <div class="btn1"><a href="Create_page/create.php">Create a new Party</a></div>
-        <div class="btn2"><a href="Join_page/join.php">Join a party</a></div>
+        <div class="btn1"><a href="<?= URL ?>create">Create a new Party</a></div>
+        <div class="btn2"><a href="<?= URL ?>join">Join a party</a></div>
     </div>
 </div>
 <div class="container_image">

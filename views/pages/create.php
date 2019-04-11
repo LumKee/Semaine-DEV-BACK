@@ -2,8 +2,8 @@
 
 session_start();
 
-require './../config/database.php';
-include 'form-handler.php';
+require '../database/database.php';
+include '../form/form-handlerCreate.php';
 
 if (!empty($_POST)) {
     
@@ -46,8 +46,8 @@ if (!empty($_POST)) {
 
 <?php include '../views/partials/head.php'; ?>
 
-<a href="./../index.php"><img class="logo" src="./Assets/images/logo.svg" alt="logo"></a>
-<img class="illustration" src="./Assets/images/information.svg" alt="illustrations">
+<a href="<?= URL ?>"><img class="logo" src="../public/assets/images/logo.svg" alt="logo"></a>
+<img class="illustration" src="../public/assets/images/information.svg" alt="illustrations">
 
 <div class="form">
     <h1>Informations</h1>
