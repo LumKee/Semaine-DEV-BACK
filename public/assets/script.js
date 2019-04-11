@@ -12,7 +12,7 @@ for (let i = 0; i < $items.length; i++) {
 
 //popup
 
-const popup = document.querySelector('.move')
+const popup = document. ('.move')
 const background = document.querySelector('.background')
 const close = document.querySelector('.close')
 
