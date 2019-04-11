@@ -79,14 +79,12 @@ body {
     width: 0.9375rem;
     height: 0.9375rem;
     margin-right: 1.8125rem;
-    top : 0.25rem;
+    top: 0.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-
-
 
 .layers>div .title .move::before {
     content: "";
@@ -368,7 +366,7 @@ body {
 
 /*  Popup   */
 
-.layers>div.background{
+.layers>div.background {
     position: fixed;
     left: 0rem;
     top: 0rem;
@@ -380,21 +378,40 @@ body {
     align-items: center;
 }
 
-.layers>div.background .popup{
+.layers>div.background .popup {
     margin: auto;
     width: 420px;
     height: 566px;
-    background-color: #ffffff;;
-    border-radius : 0.1875rem;
+    background-color: #ffffff;
+    ;
+    border-radius: 0.1875rem;
     box-shadow: 0 4px 8px 0 rgba(86, 173, 253, 0.1);
     padding: 1rem;
 }
 
-.layers>div.background .popup .close{
+.layers>div.background .popup .close {
     float: right;
-    cursor : pointer;
+    cursor: pointer;
     top: 2.0625rem;
-    right : 2.125rem; 
-    width : 1rem;
+    right: 2.125rem;
+    width: 1rem;
     color: #9B9B9B;
+}
+
+.layers>div.background .popup .itemList {
+    max-height: 450px;
+}
+
+.layers>div.background .popup .itemList p {
+    width: 19rem;
+}
+
+.layers>div .itemList div.container .img_food {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    float:left;
+    margin-right:10px; 
+    background-image: url('https://www.monoprix.fr/assets/images/grocery/2712160/580x580.jpg?impolicy=High_Grocery');
+    background-size: contain;
 }
