@@ -12,18 +12,25 @@ for (let i = 0; i < $items.length; i++) {
 
 //popup
 
-const popup = document.querySelector('.move')
+const popup = document.querySelectorAll('.move')
 const background = document.querySelector('.background')
 const close = document.querySelector('.close')
 
-popup.addEventListener('click', openPopup);
-
-close.addEventListener('click', closePopup);
+console.log(popup)
 
 function openPopup() {
-    background.style.display = 'flex';
+    background.style.display = 'flex'
+    console.log('ok')
 }
 
 function closePopup() {
-    background.style.display = 'none';
+    background.style.display = 'none'
 }   
+
+for (const pop of popup) {
+    pop.addEventListener('click', ()=>{
+        openPopup()
+    })
+}
+
+close.addEventListener('click', closePopup)

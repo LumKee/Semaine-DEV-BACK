@@ -121,7 +121,7 @@
 </div>
 
 <!-- Vrai -->
-<?php foreach($myVar as $pseudoVa0): ?>
+<?php foreach($myVar as $pseudoVar0): ?>
     <div class="persona">
     <a href="delete.php"></a>
     <div class="id">
