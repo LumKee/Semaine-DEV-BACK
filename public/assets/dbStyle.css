@@ -385,15 +385,16 @@ body {
     width: 420px;
     height: 566px;
     background-color: #ffffff;;
-    border-radius : 1em;
+    border-radius : 0.1875rem;
     box-shadow: 0 4px 8px 0 rgba(86, 173, 253, 0.1);
-    padding: 1em;
+    padding: 1rem;
 }
 
 .layers>div.background .popup .close{
     float: right;
     cursor : pointer;
-    top: 33px;
-    right : 34px; 
-    width :15px;
+    top: 2.0625rem;
+    right : 2.125rem; 
+    width : 1rem;
+    color: #9B9B9B;
 }
