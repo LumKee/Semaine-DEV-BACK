@@ -45,6 +45,7 @@ if (!empty($_POST)) {
 
             $_SESSION['user_id'] = $bdd->lastInsertId();
         }
+        $_SESSION['party_id'] = $party['id'];
         $_SESSION['party'] = $party['name'];
         header('Location:'.URL.'link');
         exit;

@@ -62,7 +62,7 @@
 ?>
 <div class="besoin">
     <div class="title">
-        <h2>Besoin</h2>
+        <h2>Produit pour la soirée</h2>
         <div class="move"></div>
     </div>
     <div class="itemList">
@@ -102,7 +102,7 @@
 </div>
 <div class="achat">
     <div class="title">
-        <h2>Achat</h2>
+        <h2>Produits en cours d'acquisition</h2>
         <div class="move"></div>
     </div>
     <div class="itemList">
@@ -174,7 +174,7 @@
 </div>
 <div class="acquis">
     <div class="title">
-        <h2>Acquis</h2>
+        <h2>Produit acquis</h2>
         <div class="move"></div>
     </div>
     <div class="itemList">
@@ -207,7 +207,7 @@
 <div class="background" <?php echo $search; ?>>
     <div class="popup">
         <form action="<?= URL ?>dashboard?categorie=Nourriture" method="get" class="present">
-            <img src= '../public/assets/images/burger.svg' alt="burger"/>
+            <img src= '../public/assets/images/beer.svg' alt="beer"/>
             <h2><?php echo $categorie; ?>
             <span class="close">&times;</span>
             </h2>

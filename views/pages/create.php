@@ -38,6 +38,7 @@ if (!empty($_POST)) {
             
             $_SESSION['user_id'] = $bdd->lastInsertId();
             $_SESSION['party'] = $_POST['name'];
+            $_SESSION['party_id'] = $partyId;
 
             header('Location:'.URL.'confirmation');
         }

@@ -1,4 +1,5 @@
 <?php
+    require '../database/database.php';
     session_start ();
     if(isset($_GET['categorie'])) {
         $categorie = (htmlspecialchars($_GET['categorie']));

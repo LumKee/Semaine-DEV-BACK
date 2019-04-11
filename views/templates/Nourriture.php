@@ -59,11 +59,20 @@
         }
       }
     }
+    if(isset($_POST['productName'])) {
+        $data = [
+            'id_Party' => (int)($_SESSION['party_id']),
+            array('productName' => trim($_POST['productName']))
+        ];
+        $prepare = $bdd->prepare('INSERT INTO produit (id_Party, foodName) VALUES (:id_Party, :productName)');
+        $prepare->execute($data);
+    }
+
 ?>
 
 <div class="besoin">
     <div class="title">
-        <h2>Besoin</h2>
+        <h2>Produit pour la soirée</h2>
         <div class="move"></div>
     </div>
     <div class="itemList">
@@ -103,7 +112,7 @@
 </div>
 <div class="achat">
     <div class="title">
-        <h2>Achat</h2>
+        <h2>Produits en cours d'acquisition</h2>
         <div class="move"></div>
     </div>
     <div class="itemList">
@@ -175,7 +184,7 @@
 </div>
 <div class="acquis">
     <div class="title">
-        <h2>Acquis</h2>
+        <h2>Produit acquis</h2>
         <div class="move"></div>
     </div>
     <div class="itemList">
@@ -215,19 +224,16 @@
             <input type="search" name="product" placeholder="Search">
             <input class='sub' type="submit">
         </form>
-        <div class="itemList" <?php echo $visib; ?>>
+        <form class="itemList" <?php echo $visib; ?> method="post">
             <?php for ($i=0; $i < count($resultTab); $i++):?>
-            <label class="container">
-                <img class="img_food" src="<?php echo $resultTab[$i][1]; ?>">
-                <?php echo $resultTab[$i][0]; ?>
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
+                <label class="container">
+                    <img class="img_food" src="<?php echo $resultTab[$i][1]; ?>">
+                    <?php echo $resultTab[$i][0]; ?>
+                    <input class="checkbox" name="productName" type="checkbox" value="<?php echo $resultTab[$i][0]; ?>">
+                    <span class="checkmark"></span>
+                </label>
             <?php endfor ?>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-        </div>
+            <input type="submit">
+        </form>
     </div>
 </div>

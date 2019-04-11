@@ -1,7 +1,5 @@
 <?php
 
-require '../database/database.php';
-
 if (isset($_SESSION['user_id'])) {
 
     // Get user name
@@ -20,7 +18,7 @@ if (isset($_SESSION)) {
     $statement2->execute();
     
     $results2 = $statement2->fetchAll();
-    $party = $results2;;
+    $party = $results2;
 }
 
 ?>
