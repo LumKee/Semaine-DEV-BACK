@@ -1,3 +1,5 @@
+//Navigation
+
 const $navigation = document.querySelector('.navMenu')
 const $items = $navigation.querySelectorAll('ul li')
 let state = $navigation.dataset.state
@@ -7,3 +9,22 @@ for (let i = 0; i < $items.length; i++) {
     $items[i].classList.remove('active')
     current.classList.add('active')
 }
+
+//popup
+
+const popup = document.querySelector('.move')
+const background = document.querySelector('.background')
+const close = document.querySelector('.close')
+
+popup.addEventListener('click', openPopup);
+
+close.addEventListener('click', closePopup);
+
+function openPopup() {
+    background.style.display = 'block';
+    console.log('open')
+}
+
+function closePopup() {
+    background.style.display = 'none';
+}   
