@@ -21,8 +21,7 @@ popup.addEventListener('click', openPopup);
 close.addEventListener('click', closePopup);
 
 function openPopup() {
-    background.style.display = 'block';
-    console.log('open')
+    background.style.display = 'flex';
 }
 
 function closePopup() {
