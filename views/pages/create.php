@@ -37,72 +37,45 @@ if (!empty($_POST)) {
             $statement->execute();
             
             $_SESSION['user_id'] = $bdd->lastInsertId();
-            
+
             header('Location: ./../Confirmation/confirmation.php');
-            
         }
     }
-    
 }
-
-
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<?php include '../views/partials/head.php'; ?>
 
-    <title>Formulaire</title>
-    <link rel="stylesheet" href="./Assets/style/style.css">
-</head>
-<body>
+<a href="./../index.php"><img class="logo" src="./Assets/images/logo.svg" alt="logo"></a>
+<img class="illustration" src="./Assets/images/information.svg" alt="illustrations">
 
-    <a href="./../index.php"><img class="logo" src="./Assets/images/logo.svg" alt="logo"></a>
-    <img class="illustration" src="./Assets/images/information.svg" alt="illustrations">
+<div class="form">
+    <h1>Informations</h1>
+    <form action="#" method="post">
+        <span class="title">Titre</span>
+        <input type="text" name="name" placeholder="Ma super soirée">
+        <span class="pseudo">Pseudo</span>
+        <input type="text" name="login" placeholder="Mon pseudo">
+        <span class="password">Mot de passe</span>
+        <input type="password" name="password" placeholder="Mot de passe de la party">
+        <span class="password-conf">Confirmer mot de passe</span>
+        <input type="password" name="password-conf" placeholder="Confirmez le mot de passe">
+        <span class="tel">Téléphone</span>
+        <input type="tel" name="phone" placeholder="+33…">
+        <span class="date">Date</span>
+        <input type="date" name="time">
+        <span class="adresse">Adresse</span>
+        <input type="text" name="address" placeholder="27 rue du Progrès, Montreuil 93100">
+        <span class="description">Messages</span>
+        <input type="textarea" name="description" placeholder="Information complémentaires">
+        <input class="Btn" type="submit" value="Create">
+    </form>
 
-    <div class="form">
-
-        <h1>Informations</h1>
-
-        <form action="#" method="post">
-
-            <span class="title">Titre</span>
-            <input type="text" name="name" placeholder="Ma super soirée">
-
-            <span class="pseudo">Pseudo</span>
-            <input type="text" name="login" placeholder="Mon pseudo">
-
-            <span class="password">Mot de passe</span>
-            <input type="password" name="password" placeholder="Mot de passe de la party">
-
-            <span class="password-conf">Confirmer mot de passe</span>
-            <input type="password" name="password-conf" placeholder="Confirmez le mot de passe">
-
-            <span class="tel">Téléphone</span>
-            <input type="tel" name="phone" placeholder="+33…">
-
-            <span class="date">Date</span>
-            <input type="date" name="time" >
-
-            <span class="adresse">Adresse</span>
-            <input type="text" name="address" placeholder="27 rue du Progrès, Montreuil 93100" >
-
-            <span class="description">Messages</span>
-            <input type="textarea" name="description" placeholder="Information complémentaires">
-
-            <input class="Btn" type="submit" value="Create">
-            
-        </form>
-        
-        <?php foreach($messages['error'] as $_message): ?>
-            <div class="message error">
-                <?= $_message ?>
-            </div>
-        <?php endforeach; ?>
+    <?php foreach($messages['error'] as $_message): ?>
+    <div class="message error">
+        <?= $_message ?>
     </div>
+    <?php endforeach; ?>
+</div>
 
-</body>
-</html>
+<?php include '../views/partials/footer.php';

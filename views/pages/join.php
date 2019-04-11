@@ -55,16 +55,7 @@ if (!empty($_POST)) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Join</title>
-    <link rel="stylesheet" href="./Assets/style/style.css">
-</head>
-<body>
+<?php include '../views/partials/head.php'; ?>
 
     <a href="./../index.php"><img class="logo" src="./Assets/images/logo.svg" alt="logo"></a>
 
@@ -92,6 +83,4 @@ if (!empty($_POST)) {
         <input class="Btn" type="submit" value="Connexion">
 
     </form>
-
-</body>
-</html>
+<?php include '../views/partials/footer.php';
