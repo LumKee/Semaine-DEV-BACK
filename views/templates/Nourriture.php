@@ -184,4 +184,12 @@
         <a href="delete.php">delete image</a>
         <?php endforeach; ?>
     </div>
+    <div class="background">
+        <div class="popup">
+            <h2>Nourriture
+                 <span class="close">&times;</span>
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque repellat exercitationem possimus magnam eos ad, veniam dolores? Quas nostrum explicabo dignissimos animi repellendus ex repellat, reiciendis illum iusto facere ad.</p>
+        </div>
+    </div>
 </div>

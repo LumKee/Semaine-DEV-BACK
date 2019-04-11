@@ -84,8 +84,10 @@ body {
     background-color: #56ADFD;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
+
+
 
 .layers>div .title .move::before {
     content: "";
@@ -363,3 +365,33 @@ body {
 }
 
 /* Dépense Personna End */
+
+
+/*  Popup   */
+.background{
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+
+.background .popup{
+    margin: auto;
+    width: 420px;
+    height: 566px;
+    background-color: #ffffff;;
+    border-radius : 1em;
+    box-shadow: 0 4px 8px 0 rgba(86, 173, 253, 0.1);
+    padding: 1em;
+}
+
+.background .popup .close{
+    float: right;
+    cursor : pointer;
+    top: 33px;
+    right : 34px; 
+    width :15px;
+}
