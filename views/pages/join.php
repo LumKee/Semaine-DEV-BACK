@@ -71,7 +71,7 @@ if (!empty($_POST)) {
         <input type="password" name="password" placeholder="Mot de passe de la soirée">
         
         <span class="pseudo">Pseudo</span>
-        <input type="text" name="login" placeholder="Pseudo" >
+        <input type="text" name="login" maxlength="14" placeholder="Pseudo" >
         
         <?php foreach($messages['error'] as $_message): ?>
             <div class="message error">
