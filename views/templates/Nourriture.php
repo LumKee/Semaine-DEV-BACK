@@ -5,35 +5,35 @@
     </div>
     <div class="itemList">
         <div class="container">Produit
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
         <div class="container">Prod
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
         <div class="container">Produit
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
         <div class="container">Prod
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
         <div class="container">Produit
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
         <div class="container">Prod
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
         <div class="container">Produit
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
         <div class="container">Prod
-            <div class="move_1"></div>
+            <div class="point"></div>
             <p>In order to discuss the general funct of the logo. </p>
         </div>
     </div>
@@ -188,8 +188,9 @@
 <div class="background">
     <div class="popup">
         <div class="present">
+            <img src= '../public/assets/images/burger.svg' alt="burger"/>
             <h2>Nourriture
-                <span class="close">&times;</span>
+            <span class="close">&times;</span>
             </h2>
             <input type="search" name="search" placeholder="Search">
         </div>
