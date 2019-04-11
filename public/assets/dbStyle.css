@@ -105,7 +105,7 @@ body {
     border-radius: 3.125rem;
 }
 
-.layers>div div.container .move_1 {
+.layers>div:not(.layers>div.acquis) div.container .move_1 {
     background-color: #9B9B9B;
     position: relative;
     width: 4px;
@@ -115,7 +115,7 @@ body {
     left: 200px;
 }
 
-.layers>div div.container .move_1::before {
+.layers>div:not(.layers>div.acquis) div.container .move_1::before {
     content: "";
     position: absolute;
     background-color: #9B9B9B;
@@ -125,7 +125,7 @@ body {
     right: 7.5px;
 }
 
-.layers>div div.container .move_1::after {
+.layers>div:not(.layers>div.acquis) div.container .move_1::after {
     content: "";
     position: absolute;
     background-color: #9B9B9B;
@@ -136,31 +136,43 @@ body {
 }
 
 .layers>div .itemList {
-    margin: 14px 20px 40px 20px;
+    margin: 14px 5px 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-height: 280px;
     overflow-y: scroll;
+    padding-right: 15px;
 }
 
 .layers>div .itemList div.container {
-position: relative;
-border: 1px solid #EFEFEF;
-border-radius: 3px;
-padding: 7px 7px 7px 14px;
-font-size: 18px;
-color:#52ABFD;
-margin: 0 0 16px 0;
+    position: relative;
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    padding: 7px 7px 7px 14px;
+    font-size: 18px;
+    color: #52ABFD;
+    margin: 0 0 16px 0;
+    width: calc(100% - 23px);
 }
 
 .layers>div .itemList div.container p {
     font-size: 14px;
-	color:#9B9B9B;
+    color: #9B9B9B;
     margin: 0px;
 }
 
-.layers>div .itemList div.container .user_btn {
+.layers>div .itemList div.container .users {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.layers>div .itemList div.container .users .user_btn {
     width: 20px;
     height: 20px;
     background-color: #56ADFD;
@@ -169,11 +181,10 @@ margin: 0 0 16px 0;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-left: calc(100% - 20px);
-
+    cursor: pointer;
 }
 
-.layers>div .itemList div.container .user_btn::before {
+.layers>div .itemList div.container .users .user_btn::before {
     content: "";
     position: absolute;
     background-color: white;
@@ -182,7 +193,7 @@ margin: 0 0 16px 0;
     border-radius: 50px;
 }
 
-.layers>div .itemList div.container .user_btn::after {
+.layers>div .itemList div.container .users .user_btn::after {
     content: "";
     position: absolute;
     background-color: white;
@@ -191,15 +202,53 @@ margin: 0 0 16px 0;
     border-radius: 50px;
 }
 
-.layers>div .itemList div.container .user_btn_2 {
+.layers>div .itemList div.container .users .user_perso {
     position: relative;
     width: 20px;
     height: 20px;
     background-image: url('https://scontent-cdt1-1.xx.fbcdn.net/v/t31.0-1/c0.0.1439.1439a/21415020_1538803939499495_1965272431162494151_o.jpg?_nc_cat=100&_nc_ht=scontent-cdt1-1.xx&oh=eb473fb13b9ebbb0d97e0b2484ee937b&oe=5D42FC19');
     background-size: contain;
     border-radius: 50%;
-    bottom: 20px;
-    margin-left: calc(100% - 42px);
+    margin-right: 5px;
+}
+
+.layers>div.acquis div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layers>div.acquis div.container .move_1 {
+    border: 1px solid #56ADFD;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    margin-right: 5px;
+}
+
+.layers>div.acquis div.container .move_1::before {
+    content: "";
+    position: absolute;
+    background-color: #56ADFD;
+    width: 1px;
+    height: 8px;
+    top: 60%;
+    right: 65%;
+    transform: rotate(90deg);
+    transform-origin: 4px;
+}
+
+.layers>div.acquis div.container .move_1::after {
+    content: "";
+    position: absolute;
+    background-color: #56ADFD;
+    width: 1px;
+    height: 5px;
+    bottom: 40%;
+    right: 65%;
 }
 
 /* Nourriture/Boisson End */
