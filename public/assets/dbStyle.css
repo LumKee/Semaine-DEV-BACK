@@ -75,32 +75,34 @@ body {
 }
 
 .layers>div .title .move {
-    background-color: #56ADFD;
     position: relative;
-    width: 5px;
-    height: 5px;
+    width: 0.125rem;
+    height: 0.125rem;
+    margin-right: 1.8125rem;
+    top : 0.25rem;
     border-radius: 50%;
-    margin-right: 32.5px;
+    background-color: #56ADFD;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .layers>div .title .move::before {
     content: "";
     position: absolute;
     background-color: #56ADFD;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    right: 7.5px;
+    width: 0.9375rem;
+    height: 0.125rem;
+    border-radius: 3.125rem;
 }
 
 .layers>div .title .move::after {
     content: "";
     position: absolute;
     background-color: #56ADFD;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    left: 7.5px;
+    width: 0.125rem;
+    height: 0.9375rem;
+    border-radius: 3.125rem;
 }
 
 .layers>div div.container .move_1 {
