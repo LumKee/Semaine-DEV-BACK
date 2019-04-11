@@ -142,71 +142,25 @@
         </div>
     </div>
 </div>
-<div class="background">
+<div class="background" <?php echo $search; ?>>
     <div class="popup">
-        <div class="present">
+        <form action="<?= URL ?>dashboard?categorie=Nourriture" method="get" class="present">
             <img src= '../public/assets/images/burger.svg' alt="burger"/>
-            <h2>Nourriture
+            <h2><?php echo $categorie; ?>
             <span class="close">&times;</span>
             </h2>
-            <input type="search" name="search" placeholder="Search">
-        </div>
-        <div class="itemList">
-            <div class="container">
-                <div class="img_food"></div>Produit
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-
-            <div class="container">Prod<div class="img_food"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-
-            <div class="container">Produit<div class="img_food"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-
-            <div class="container">Prod<div class="img_food"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-
-            <div class="container">Produit<div class="img_food"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-
-            <div class="container">Prod<div class="img_food"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-
-            <div class="container">Produit<div class="img_food"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-
-                <div class="users">
-                    <div class="user_btn"></div>
-                </div>
-            </div>
-
-            <div class="container">Prod<div class="img_food"></div>
-                <p>In order to discuss the general funct of the logo. </p>
-
+            <input type="search" name="product" placeholder="Search">
+            <input class='sub' type="submit">
+        </form>
+        <div class="itemList" <?php echo $visib; ?>>
+            <?php for ($i=0; $i < count($resultTab); $i++):?>
+            <label class="container">
+                <img class="img_food" src="<?php echo $resultTab[$i][1]; ?>">
+                <?php echo $resultTab[$i][0]; ?>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <?php endfor ?>
                 <div class="users">
                     <div class="user_btn"></div>
                 </div>

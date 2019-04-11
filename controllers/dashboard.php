@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Food-page';
+$title = 'Dashboard';
 $style = 'dbStyle';
 
 include '../views/pages/dashboard.php';
