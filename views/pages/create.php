@@ -57,7 +57,7 @@ if (!empty($_POST)) {
         <span class="title">Titre</span>
         <input type="text" name="name" placeholder="Ma super soirée">
         <span class="pseudo">Pseudo</span>
-        <input type="text" name="login" placeholder="Mon pseudo">
+        <input type="text" name="login" maxlength="14" placeholder="Mon pseudo">
         <span class="password">Mot de passe</span>
         <input type="password" name="password" placeholder="Mot de passe de la party">
         <span class="password-conf">Confirmer mot de passe</span>
