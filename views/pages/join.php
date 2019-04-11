@@ -3,7 +3,7 @@
 session_start();
 
 require '../database/database.php';
-include '../form/form-handlerJoin.php';
+include '../views/form/form-handlerJoin.php';
 
 if (!empty($_POST)) {
 
