@@ -36,6 +36,13 @@ h2 {
     margin-block-start: 30px;
 }
 
+h2.give {
+	font-size: 30px;
+	color:#52ABFD;
+    margin-block-end: 45px;
+    margin-block-start: -30px;
+}
+
 .illustration {
     width: 40%;
     margin-left: auto;
