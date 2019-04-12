@@ -93,7 +93,7 @@
     <div class="itemList">
         <?php foreach($foods as $_food): ?>
             <div class="container"><?= $_food->drinkName ?>
-                <div class="point" onclick="location.href='<?= URL ?>delete?idprod=<?php echo $_food->id; ?>'" ></div>
+                <div class="point" onclick="location.href='<?= URL ?>delete?idprodb=<?php echo $_food->id; ?>'" ></div>
                 <p>Something about me and my composition. </p>
             </div>
         <?php endforeach; ?>

@@ -461,7 +461,7 @@ body {
     color: #333333;
 }
 
-.layers>div.background div.popup input.search {
+.layers>div.background div.popup input[type=search] {
     background-image: url('images/search.svg');
     background-position: 5%, 45%;
     background-repeat: no-repeat;
@@ -475,7 +475,7 @@ body {
     padding: 0 0 0 40px;
     font-size: 16px;
     width: 95%;
-    height: 95%;
+    height: 100%;
     color: #9B9B9B;
 }
 
@@ -506,4 +506,9 @@ body {
     margin-left: -110px;
     width: 100px;
     height: 100px;
+}
+
+.layers>div.background div.popup input:not(.sub):not(input[type=search]) {
+    padding: 0;
+    width: 100%;
 }
