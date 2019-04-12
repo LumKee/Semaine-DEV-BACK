@@ -57,9 +57,9 @@ if (!empty($_POST)) {
 
 <?php include '../views/partials/head.php'; ?>
 
-    <a href="<?= URL ?>"><img class="logo" src="../public/assets/images/logo.svg" alt="logo"></a>
+    <a href="<?= URL ?>"><img class="logo" src="<?= URL ?>assets/images/logo.svg" alt="logo"></a>
 
-    <img class="illustration" src="../public/assets/images/illustration.svg" alt="illustrations">
+    <img class="illustration" src="<?= URL ?>assets/images/illustration.svg" alt="illustrations">
 
     <form action="#" method="post">
 

@@ -23,14 +23,14 @@ if (isset($_SESSION)) {
 
 ?>
 <nav class="nav">
-        <img class="logo" src="../public/assets/images/logo.svg" alt="logo">
+        <img class="logo" src="<?= URL ?>assets/images/logo.svg" alt="logo">
         <div class="session">
-            <img class="session_img" src="../public/assets/images/session.svg" alt="session">
+            <img class="session_img" src="<?= URL ?>assets/images/session.svg" alt="session">
             <span class="session_text" ><?php echo $_SESSION['party'] ?></span>
         </div>
         <div class="profil">
-            <img src="../public/assets/images/Alban.png" alt="profil">
+            <img src="<?= URL ?>assets/images/Alban.png" alt="profil">
             <span>Hello, <?= $user['login']; ?> !</span>
         </div>
-        <img class="log" src="../public/assets/images/log_out.svg" alt="log_out" onclick="location.href='<?= URL ?>logout'">
+        <img class="log" src="<?= URL ?>assets/images/log_out.svg" alt="log_out" onclick="location.href='<?= URL ?>logout'">
 </nav>

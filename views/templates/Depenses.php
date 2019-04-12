@@ -1,6 +1,3 @@
-<?php
-    $_SESSION['position'] = 'Depense';
-?>
 <!-- Exemple -->
 <div class="persona">
     <a href="delete.php"></a>

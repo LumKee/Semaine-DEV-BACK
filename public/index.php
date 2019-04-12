@@ -19,8 +19,20 @@ if($q =='home')
 {
     $controller = 'home';
 }
-else if ($q == 'dashboard') {
-    $controller = 'dashboard';
+else if ($q == 'dashboard/Nourriture') {
+    $controller = 'dashboardNourriture';
+}
+else if ($q == 'dashboard/Depenses') {
+    $controller = 'dashboardDepenses';
+}
+else if ($q == 'dashboard/Boissons') {
+    $controller = 'dashboardBoissons';
+}
+else if ($q == 'dashboard/Materiels') {
+    $controller = 'dashboardMateriels';
+}
+else if ($q == 'dashboard/Musique') {
+    $controller = 'dashboardMusique';
 }
 else if ($q == 'confirmation') {
     $controller = 'confirmation';

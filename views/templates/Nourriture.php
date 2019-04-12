@@ -1,5 +1,4 @@
 <?php
-    $_SESSION['position'] = 'Nourriture';
     $productName = !empty($_GET['product']) ? $_GET['product'] : null;
     if ($productName !== null) {
         $search = "style='display: flex;'";
@@ -75,6 +74,7 @@
                 $prepare->execute($data);
             }
         }
+        $search = "style='display: none;'";
     }
     $data = [
         'id_Party' => (int)($_SESSION['party_id']),
@@ -133,8 +133,8 @@
 <div class="background" <?php echo $search; ?>>
     <div class="popup">
         <form action="" method="get" class="present">
-            <img src= '../public/assets/images/burger.svg' alt="burger"/>
-            <h2><?php echo $categorie; ?>
+            <img src= '<?= URL ?>assets/images/burger.svg' alt="burger"/>
+            <h2>Nourriture
             <span class="close">&times;</span>
             </h2>
             <input type="search" name="product" placeholder="Search">

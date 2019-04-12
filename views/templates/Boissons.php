@@ -1,5 +1,4 @@
 <?php
-    $_SESSION['position'] = 'Boissons';
     $productName = !empty($_GET['product']) ? $_GET['product'] : null;
     if ($productName !== null) {
         $search = "style='display: flex;'";
@@ -7,6 +6,7 @@
     else {
         $search = '';
     }
+    
     $resultTab[] = 0;
     $visib = "style='display: none'";
     if ($productName !== null) {
@@ -60,6 +60,7 @@
         }
       }
     }
+
     if(isset($_POST['selection'])) {
         if(isset($_POST['productName'])) {
             $prod = $_POST['productName'];
@@ -69,25 +70,28 @@
                     'id_Party' => (int)($_SESSION['party_id']),
                     'productName' => $prod[$i]
                 ];
-                $preparedrink = $bdd->prepare('INSERT INTO boisson (id_Party, drinkName) VALUES (:id_Party, :productName)');
-                $preparedrink->execute($data);
+                $prepare = $bdd->prepare('INSERT INTO boisson (id_Party, drinkName) VALUES (:id_Party, :productName)');
+                $prepare->execute($data);
             }
         }
+        $search = "style='display: none;'";
     }
     $data = [
         'id_Party' => (int)($_SESSION['party_id']),
     ];
-    $prepare = $bdd->prepare('SELECT id, drinkName FROM boisson WHERE id_Party = :id_Party ORDER BY id DESC');
+    $prepare = $bdd->prepare('SELECT * FROM boisson WHERE id_Party = :id_Party ORDER BY id DESC');
     $prepare->execute($data);
-    $drinks = $prepare->fetchAll();
+    $foods = $prepare->fetchAll();
+
 ?>
+
 <div class="besoin">
     <div class="title">
         <h2>Produit pour la soirée</h2>
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <?php foreach($drinks as $_food): ?>
+        <?php foreach($foods as $_food): ?>
             <div class="container"><?= $_food->drinkName ?>
                 <div class="point" onclick="location.href='<?= URL ?>delete?idprod=<?php echo $_food->id; ?>'" ></div>
                 <p>Something about me and my composition. </p>
@@ -101,7 +105,7 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <?php foreach($drinks as $_food): ?>
+        <?php foreach($foods as $_food): ?>
             <div class="container"><?= $_food->drinkName ?>
                 <div class="move_1"></div>
                 <p>In order to discuss the general funct of the logo. </p>
@@ -119,7 +123,7 @@
         <div class="move"></div>
     </div>
     <div class="itemList">
-        <?php foreach($drinks as $_food): ?>
+        <?php foreach($foods as $_food): ?>
             <div class="container"><?= $_food->drinkName ?>
                 <div class="move_1"></div>
             </div>
@@ -128,9 +132,9 @@
 </div>
 <div class="background" <?php echo $search; ?>>
     <div class="popup">
-        <form action="" method="post" class="present">
-            <img src= '../public/assets/images/beer.svg' alt="beer"/>
-            <h2><?php echo $categorie; ?>
+        <form action="" method="get" class="present">
+            <img src= '<?= URL ?>assets/images/burger.svg' alt="burger"/>
+            <h2>Boissons
             <span class="close">&times;</span>
             </h2>
             <input type="search" name="product" placeholder="Search">

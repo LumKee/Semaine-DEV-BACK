@@ -1,6 +1,3 @@
-<?php
-    $_SESSION['position'] = 'Materiels';
-?>
 <div class="besoin">
     <div class="title">
         <h2>Besoin</h2>
@@ -149,7 +146,7 @@
     <div class="popup">
         <form action="<?= URL ?>dashboard?categorie=Nourriture" method="get" class="present">
             <img src= '../public/assets/images/burger.svg' alt="burger"/>
-            <h2><?php echo $categorie; ?>
+            <h2>Matériels
             <span class="close">&times;</span>
             </h2>
             <input type="search" name="product" placeholder="Search">

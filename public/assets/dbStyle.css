@@ -143,7 +143,7 @@ body {
     padding-right: 15px;
 }
 
-.layers>div .itemList .container {
+.layers>div:not(.persona) .itemList .container {
     position: relative;
     border: 1px solid #EFEFEF;
     border-radius: 3px;
@@ -487,4 +487,16 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
     z-index: 99;
+}
+
+.layers>div div.itemList.musique .container {
+    padding-left: 120px;
+}
+
+.layers>div div.itemList .container .jacket {
+    float: left;
+    margin-top: -4.5%;
+    margin-left: -110px;
+    width: 100px;
+    height: 100px;
 }

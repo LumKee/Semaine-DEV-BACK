@@ -1,13 +1,6 @@
 <?php
     require '../database/database.php';
     session_start ();
-    if(isset($_GET['categorie'])) {
-        $categorie = (htmlspecialchars($_GET['categorie']));
-    } 
-    else {
-        $_SESSION['position'] = "Nourriture";
-        $categorie = $_SESSION['position'];
-    }
     if (is_null($_SESSION['party'])) {
         // On teste pour voir si nos variables ont bien été enregistrées
         echo 'Les variables ne sont pas déclarées.';
@@ -24,13 +17,18 @@
 <header>
     <?php include '../views/partials/header.php'; ?>
 </header>
-<div class="navMenu" data-state="<?php echo $categorie; ?>">
-    <?php include '../views/partials/nav.php'; ?>
+<div class="navMenu">
+    <ul>
+        <li class="Nourriture" onclick="location.href='<?= URL ?>dashboard/Nourriture'">Nourriture</li>
+        <li class="Boissons" onclick="location.href='<?= URL ?>dashboard/Boissons'">Boissons</li>
+        <li class="Musiques" onclick="location.href='<?= URL ?>dashboard/Musique'">Musiques</li>
+        <li class="Materiels" onclick="location.href='<?= URL ?>dashboard/Materiels'">Matériels</li>
+        <li class="Depenses active" onclick="location.href='<?= URL ?>dashboard/Depenses'">Dépenses</li>
+    </ul>
 </div>
 <div class="layers">
-    <?php include '../views/templates/'.$categorie.'.php'; ?>
+    <?php include '../views/templates/Depenses.php'; ?>
 </div>
-
 
 <div class="button"></div>
 
