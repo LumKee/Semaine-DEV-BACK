@@ -20,13 +20,8 @@
 ## API
 
 * API Carrefour
-   * 
-
 * API Open Food Fact
-   * 
-
 * API Last FM 
-   * 
 
 ## Compatibilité 
 
