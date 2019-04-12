@@ -489,8 +489,15 @@ body {
     z-index: 99;
 }
 
-.layers>div div.itemList.musique .container {
-    padding-left: 120px;
+.layers>div.besoin div.itemList.musique .container {
+    position: relative;
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    padding: 7px 7px 7px 120px;
+    font-size: 18px;
+    color: #52ABFD;
+    margin: 0 0 16px 0;
+    width: calc(100% - 143px);
 }
 
 .layers>div div.itemList .container .jacket {

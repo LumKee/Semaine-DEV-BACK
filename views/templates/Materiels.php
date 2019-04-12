@@ -142,25 +142,16 @@
         </div>
     </div>
 </div>
-<div class="background" <?php echo $search; ?>>
+<div class="background">
     <div class="popup">
-        <form action="<?= URL ?>dashboard?categorie=Nourriture" method="get" class="present">
-            <img src= '../public/assets/images/burger.svg' alt="burger"/>
+        <form action="" method="get" class="present">
             <h2>Matériels
             <span class="close">&times;</span>
             </h2>
             <input type="search" name="product" placeholder="Search">
             <input class='sub' type="submit">
         </form>
-        <div class="itemList" <?php echo $visib; ?>>
-            <?php for ($i=0; $i < count($resultTab); $i++):?>
-            <label class="container">
-                <img class="img_food" src="<?php echo $resultTab[$i][1]; ?>">
-                <?php echo $resultTab[$i][0]; ?>
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-            <?php endfor ?>
+        <div class="itemList">
                 <div class="users">
                     <div class="user_btn"></div>
                 </div>
