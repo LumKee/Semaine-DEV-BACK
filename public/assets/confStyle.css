@@ -46,7 +46,7 @@ h2 {
 /*
 * Button
 */
-a
+/* a
 {
     display: flex;
     text-decoration: none;
@@ -105,4 +105,86 @@ a
 .btn2:hover
 {
     box-shadow: 0 2px 4px 0 rgba(86,173,253,10);
+} */
+
+
+.button-4{
+    position:relative;
+    top: 80%;
+    left: 20%;
+    width:212px;
+    height:56px;
+    border-radius: 3px;
+    border: solid 3px #56ADFD;
+    background-color: #56ADFD;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+.button-4 a{
+    font-family:arial;
+    font-size:16px;
+    color:#fff;
+    text-decoration:none;
+    line-height:50px;
+    transition:all .5s ease;
+    z-index:2;
+    position:relative;
+}
+.eff-4{
+    width:212px;
+    height:56px;
+    left:220px;
+    background:#fff;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+}
+.button-4:hover .eff-4{
+    left:0;
+}
+.button-4:hover a{
+    color: #56ADFD;
+}
+.button-5{
+    position: absolute;
+    top: 88.96%;
+    left: 50%;
+    width:212px;
+    height:56px;
+    border: solid 3px #56ADFD;
+    border-radius: 3px;
+    background-color: #56ADFD;
+    float: right;
+    text-align:center;
+    cursor:pointer;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+.button-5 a{
+    font-family:arial;
+    font-size:16px;
+    color:#fff;
+    text-decoration:none;
+    line-height:50px;
+    transition:all .5s ease;
+    z-index:2;
+    position:relative;
+}
+.eff-5{
+    width:212px;
+    height:56px;
+    left:220px;
+    background:#fff;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+}
+.button-5:hover .eff-5{
+    left:0;
+}
+.button-5:hover a{
+    color: #56ADFD;
 }
